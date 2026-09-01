@@ -1,0 +1,48 @@
+#vista_login{
+    width:350px;
+    padding:1rem;
+    border:1px black solid;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+}
+
+#titulo-login{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 27px;
+}
+
+#form-login{
+    display:flex;
+    flex-direction: column;
+}
+
+#form-login label{
+   font-size: 21px;
+   font-weight: bold;
+}
+
+#boton-login {
+    padding:1rem;
+    border-radius: 18px;
+    width: 100px;
+    cursor:pointer;
+    margin: 1rem 0;
+    align-self: center;
+}
+
+#registrar {
+    padding:0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#registrar a{
+    text-decoration: none;
+    margin:0.5rem 0;
+}
+
+#registrar a:hover{
+    font-weight: bold;
+}

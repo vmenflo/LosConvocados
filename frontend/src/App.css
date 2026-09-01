@@ -1,0 +1,27 @@
+#main {
+    display:flex;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Formularios */
+
+.campo-form {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campo-login:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
