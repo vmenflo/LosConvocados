@@ -1,4 +1,5 @@
 import '../css/login-registro.css'
+import { Link } from 'react-router-dom'
 
 
 export default function Login(){
@@ -14,7 +15,7 @@ export default function Login(){
             </form>
             <span id="registrar">
                 ¿Aún no tienes cuenta? 
-                <a href="/Registro">Regístrate</a>
+                <Link to="/registro">Registro</Link>
             </span>
         </div>
     )

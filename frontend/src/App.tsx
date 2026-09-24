@@ -1,4 +1,5 @@
 import './App.css'
+import { Routes, Route } from 'react-router-dom'
 import Login from './pages/Login'
 import Registro from './pages/Registro'
 
@@ -6,13 +7,18 @@ function App() {
 
   return (
     <>
-      <section id="main">
-       <div>
-        <h1>Los Convocados</h1>
-        {/*<Login/>*/}
-        <Registro/>
-       </div>
-      </section>
+      <main className="main">
+
+        <Routes>
+
+            <Route path="/login" element={<Login />} />
+            
+            <Route path="/registro" element={<Registro />} />
+
+        </Routes>
+
+      </main>
+  
     </>
   )
 }
