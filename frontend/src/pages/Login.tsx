@@ -1,12 +1,11 @@
-import '../App.css'
-import '../css/login.css'
+import '../css/login-registro.css'
 
 
 export default function Login(){
     return(
-        <div id="vista_login">
-            <h2 id="titulo-login">¿Quién juega hoy?</h2>
-            <form id="form-login">
+        <div className="vista-login-registro">
+            <h2 className="titulo-login-registro">¿Quién juega hoy?</h2>
+            <form className="form-login-registro">
                 <label htmlFor="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Introduce tu email" className="campo-form"/>
                 <label htmlFor="password">contraseña</label>
