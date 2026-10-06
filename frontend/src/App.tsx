@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Login from './pages/Login'
 import Registro from './pages/Registro'
 import Home from './pages/Home'
+import Deporte from './pages/Deporte'
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
             <Route path="/registro" element={<Registro />} />
 
             <Route path="/home" element={<Home />} />
+
+            <Route path="/deportes/:deporte" element={<Deporte />} />
 
 
         </Routes>

@@ -1,12 +1,23 @@
 import '../css/login-registro.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import type { FormEvent } from 'react'
+
+
 
 
 export default function Login(){
+    
+const navigate = useNavigate()
+
+    
+function handleSubmit(event: FormEvent<HTMLFormElement>) {   event.preventDefault()
+   navigate("/home")
+}
+
     return(
         <div className="vista-login-registro">
             <h2 className="titulo-login-registro">¿Quién juega hoy?</h2>
-            <form className="form-login-registro">
+            <form className="form-login-registro" onSubmit={handleSubmit}>
                 <label htmlFor="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Introduce tu email" className="campo-form"/>
                 <label htmlFor="password">contraseña</label>
